@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
         {
             pos.x -= speed * Time.deltaTime;
         }
-
+        
         // The following sections allow the character to move diagonally
         if (Input.GetKey("e"))
         {

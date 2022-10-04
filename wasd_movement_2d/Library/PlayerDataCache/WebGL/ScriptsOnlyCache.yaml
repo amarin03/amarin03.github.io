@@ -3,17 +3,17 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Movement
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -43,7 +43,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 23806}
+      Script: {instanceID: 3066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -63,6 +63,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -79,12 +85,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
@@ -604,4 +604,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/felip/OneDrive/Documents/School/UWB/Fall 2022/CSS 385/Build_wasd_webgl
+  playerPath: C:/Users/felip/OneDrive/Documents/School/UWB/Fall 2022/CSS 385/amarin03.github.io/build_wasd_webgl
