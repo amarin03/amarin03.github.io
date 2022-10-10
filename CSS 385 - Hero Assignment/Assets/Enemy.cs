@@ -51,8 +51,8 @@ public class Enemy : MonoBehaviour
     public void Respawn(){
         alphaLevel = 1f;
         Vector3 position;
-        float x = Random.Range(-190, 190);
-        float y = Random.Range(-90, 90);
+        float x = Random.Range(-175, 175);
+        float y = Random.Range(-80, 80);
         position = new Vector3(x, y, 0);
         GameObject newEnemy = Instantiate(gameObject, position, gameObject.transform.rotation);
         

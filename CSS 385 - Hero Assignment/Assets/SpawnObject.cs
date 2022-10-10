@@ -26,8 +26,8 @@ public class SpawnObject : MonoBehaviour
         
         
         for(int i = 0; i < number; i++){
-            float x = Random.Range(-190, 190);
-            float y = Random.Range(-90, 90);
+            float x = Random.Range(-175, 175);
+            float y = Random.Range(-80, 80);
 
             position = new Vector3(x, y, 0);
             Instantiate(enemyPrefab, position, enemyPrefab.transform.rotation);
