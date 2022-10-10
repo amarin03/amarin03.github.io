@@ -27,6 +27,7 @@ public class Counter : MonoBehaviour
         eggs = GameObject.FindGameObjectsWithTag("Egg");
         enemyCounter.text = "Enemy: Count(" + enemies.Length.ToString() +")";
         eggCounter.text = "Egg Count(" + eggs.Length.ToString() +")";
+        enemyDestroyed.text = "Destroyed(" + destroyed +")";
         
         
 
