@@ -28,7 +28,7 @@ public class Counter : MonoBehaviour
         enemyCounter.text = "Enemy: Count(" + enemies.Length.ToString() +")";
         eggCounter.text = "Egg Count(" + eggs.Length.ToString() +")";
         enemyDestroyed.text = "Destroyed(" + destroyed +")";
-        
+        DestroyedCount();
         
 
     }
@@ -36,7 +36,7 @@ public class Counter : MonoBehaviour
         for (int i = 0; i < enemies.Length; i++){
             destroyed++; 
         }
-        enemyDestroyed.text = "Destroyed(" + destroyed +")";
+        
     }
     
         
