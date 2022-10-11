@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
        
     }
     public void Respawn(){
-        alphaLevel = 1f;
+        
         Vector3 position;
         float x = Random.Range(-165, 165);
         float y = Random.Range(-80, 80);

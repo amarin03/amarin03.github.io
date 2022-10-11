@@ -18,7 +18,7 @@ public class HeroMovement : MonoBehaviour
     // Update is called once per frame
     void Update(){   
         
-        if (Input.GetKey("m")){
+        if (Input.GetKeyDown("m")){
            mouseControl = !mouseControl;
         } 
 
