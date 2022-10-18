@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class SpawnObject : MonoBehaviour
 {
-    // private Camera mTheCamera;
-    // private Bounds mWorldBound;
-    
-    // private Vector2 mSpawnRegionMin;
-    // private Vector2 mSpawnRegionMax;
-    // private GameObject[] mEnemySystem;
-    // private Vector2 EnemySpawnSystem;
-    
-    public GameObject enemyPrefab;
+    public static GameObject enemyPrefab;
     
     
 
@@ -20,8 +12,10 @@ public class SpawnObject : MonoBehaviour
         Spawn();
     }
     
+    
     public void Spawn(){
         Vector3 position;
+        enemyPrefab = Resources.Load<GameObject>("Prefabs/Enemy");
         int number = 10;
         
         
@@ -34,6 +28,7 @@ public class SpawnObject : MonoBehaviour
 
         }
     }
+   
 
     
     

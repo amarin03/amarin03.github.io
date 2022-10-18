@@ -6,38 +6,26 @@ using UnityEngine.UI;
 public class Counter : MonoBehaviour
 {
     public Text eggCounter = null;
-    public Text enemyCounter = null;
-    public Text enemyDestroyed = null;
-    public Text heroCollision = null;
-    private int destroyed = 0;
+    public Text Movement = null;
+    public bool enemyMovement = true;
     
-    GameObject[] enemies;
     GameObject[] eggs;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        enemyDestroyed.text = "Destroyed(" + destroyed +")";
-    }
 
     // Update is called once per frame
     void Update()
     {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
         eggs = GameObject.FindGameObjectsWithTag("Egg");
-        enemyCounter.text = "Enemy: Count(" + enemies.Length.ToString() +")";
-        eggCounter.text = "Egg Count(" + eggs.Length.ToString() +")";
-        enemyDestroyed.text = "Destroyed(" + destroyed +")";
-        
-        
+        eggCounter.text = "EGG: OnScreen(" + eggs.Length.ToString() +")";
 
-    }
-    private void DestroyedCount() {
-        for (int i = 0; i < enemies.Length; i++){
-            destroyed++; 
+        if (Input.GetKeyDown("j")){
+           enemyMovement = !enemyMovement;
+        } 
+        if(enemyMovement){
+            Movement.text = "WAYPOINTS: (Sequence)";
+            
+        } else {
+            Movement.text = "WAYPOINTS: (Random)";
+            
         }
-        
-    }
-    
-        
+    }    
 }
