@@ -39,9 +39,8 @@ public class HeroMovement : MonoBehaviour
 
     private void KeyboardMovement(){
 
-        transform.Translate(0f, .05f, 0f);
+        transform.Translate(0f, .25f, 0f);
         
-
         if (Input.GetKey("w")){
             speed += Input.GetAxis("Vertical");
             transform.position += transform.up * (speed * Time.smoothDeltaTime);
@@ -54,12 +53,12 @@ public class HeroMovement : MonoBehaviour
         }
             
         if (Input.GetKey("a")){
-            transform.Rotate(Vector3.forward, -50f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
+            transform.Rotate(Vector3.forward, -20f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
 
         }
             
         if (Input.GetKey("d")){
-            transform.Rotate(Vector3.forward, -50f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
+            transform.Rotate(Vector3.forward, -20f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
 
         }
     }
