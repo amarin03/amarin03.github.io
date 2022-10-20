@@ -5,7 +5,6 @@ using UnityEngine;
 public class WayPointF : MonoBehaviour
 {
     public int health = 100;
-    
     public static GameObject wayPointF;
 
     // Start is called before the first frame update
@@ -26,7 +25,6 @@ public class WayPointF : MonoBehaviour
         } else {
             GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,.25f);
         }
-       
     }
     public void wayPointDamageF(int damage){
         health -= damage;

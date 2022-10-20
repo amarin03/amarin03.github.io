@@ -7,24 +7,22 @@ public class Enemy : MonoBehaviour
 {
     
     public int healthBar = 100;
-    public float alphaLevel = 1f;
     public static GameObject enemyPrefab;
     
-
     void Update(){
 
         if (healthBar == 100){
-            alphaLevel = 1f;
-            GetComponent<SpriteRenderer>().color = new Color (1,1,1,alphaLevel);
+            
+            GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, 1f);
         }else if(healthBar == 75){
-            alphaLevel = .75f;
-            GetComponent<SpriteRenderer>().color = new Color (1,1,1,alphaLevel);
+           
+            GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, .75f);
         } else if (healthBar == 50){
-            alphaLevel = .5f;
-            GetComponent<SpriteRenderer>().color = new Color (1,1,1,alphaLevel);
+            
+            GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, .5f);
         } else {
-            alphaLevel = .2f;
-            GetComponent<SpriteRenderer>().color = new Color (1,1,1,alphaLevel);
+            
+            GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, .25f);
         }
     }
     public void Damage(int damage){
@@ -37,6 +35,7 @@ public class Enemy : MonoBehaviour
             Respawn();
             
         }
+        
     }
     public void Respawn(){
         
