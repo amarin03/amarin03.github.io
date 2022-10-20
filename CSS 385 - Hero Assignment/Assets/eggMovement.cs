@@ -8,6 +8,8 @@ public class eggMovement : MonoBehaviour
     
     
     
+    
+    
     // Start is called before the first frame update
     void Update()
     {
@@ -25,14 +27,14 @@ public class eggMovement : MonoBehaviour
      private void OnTriggerEnter2D(Collider2D collision){
         
         Enemy enemy = collision.GetComponent<Enemy>();
-       
-        
+        Waypoint wPA = collision.GetComponent<Waypoint>();
+    
         if (collision.gameObject.name != "Hero"){
             
            enemy.Damage(25);
+           wPA.wayPointDamage(25);
            
         } 
          Destroy(gameObject);  
     }
-
 }

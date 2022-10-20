@@ -140,11 +140,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoint:
-  - {fileID: 9022029251171079631, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
-  - {fileID: 2595077418966019587, guid: daf4f73c8ddd8af4eaa00d73eaf23ce5, type: 3}
-  - {fileID: 6220868671031022406, guid: 068635d7da8e1bc448b7c26f7e858f44, type: 3}
-  - {fileID: 7375144863359563077, guid: ba702564339d42e47a907b4b23c027e4, type: 3}
-  - {fileID: 5318680927906346034, guid: b43034eee4a66ce49907ecbe92619da5, type: 3}
-  - {fileID: 5556319772819883332, guid: af88cf4ddb7037c4492d3a936b5982f7, type: 3}
+  - {fileID: 8499525782577762238, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
+  - {fileID: 637196699658606562, guid: cb8228bbd29a1214b98d76103fe3203f, type: 3}
+  - {fileID: 6196265974308768548, guid: 3e17e89330d9e014ca917dd8b7fd378c, type: 3}
+  - {fileID: 5218263608105326028, guid: ab6d32044f5d9cd43887951c3e842651, type: 3}
+  - {fileID: 8743268527093683600, guid: 73e8febd456606b4e930d34d0879835f, type: 3}
+  - {fileID: 3381290248167555302, guid: 51605ae127e1daf4c9777344b5fc3243, type: 3}
   speed: 100
   enemyMovement: 1

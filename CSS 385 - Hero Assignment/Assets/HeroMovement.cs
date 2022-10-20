@@ -7,13 +7,11 @@ public class HeroMovement : MonoBehaviour
 {
     Vector3 p;
     public float speed = 20f;
-    public float rotateSpeed = 2f;
+    public float rotateSpeed = 20f;
     public bool mouseControl = true;
     public Text heroMode = null;
     public Text heroCollision = null;
     private int collisionCount = 0;
-    
-    
       
     // Update is called once per frame
     void Update(){   
@@ -56,18 +54,17 @@ public class HeroMovement : MonoBehaviour
         }
             
         if (Input.GetKey("a")){
-            transform.Rotate(Vector3.forward, -10f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
+            transform.Rotate(Vector3.forward, -30f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
 
         }
             
         if (Input.GetKey("d")){
-            transform.Rotate(Vector3.forward, -10f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
+            transform.Rotate(Vector3.forward, -30f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
 
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
-        
         
         Enemy enemy = collision.GetComponent<Enemy>();
         

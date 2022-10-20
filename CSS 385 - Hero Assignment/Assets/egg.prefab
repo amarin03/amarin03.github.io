@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+  wayPointA: {fileID: 8499525782577762238, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
 --- !u!58 &3870889630344035837
 CircleCollider2D:
   m_ObjectHideFlags: 0

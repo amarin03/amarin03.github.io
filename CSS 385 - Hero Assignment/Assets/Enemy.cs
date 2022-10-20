@@ -29,7 +29,6 @@ public class Enemy : MonoBehaviour
     }
     public void Damage(int damage){
 
-        enemyPrefab = Resources.Load<GameObject>("Prefabs/Enemy");
         healthBar -= damage;
 
         if (healthBar <= 0){
