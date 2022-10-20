@@ -5,7 +5,7 @@ using UnityEngine;
 public class WayPointF : MonoBehaviour
 {
     public int health = 100;
-    public float alphaLevel = 1f;
+    
     public static GameObject wayPointF;
 
     // Start is called before the first frame update
@@ -18,17 +18,13 @@ public class WayPointF : MonoBehaviour
     void Update()
     {
         if (health == 100){
-            alphaLevel = 1f;
-            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,alphaLevel);
+            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,1f);
         }else if(health == 75){
-            alphaLevel = .75f;
-            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,alphaLevel);
+            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,.75f);
         } else if (health == 50){
-            alphaLevel = .5f;
-            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,alphaLevel);
+            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,.5f);
         } else {
-            alphaLevel = .25f;
-            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,alphaLevel);
+            GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,.25f);
         }
        
     }

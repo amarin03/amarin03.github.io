@@ -5,11 +5,8 @@ using UnityEngine;
 public class HideWaypoint : MonoBehaviour
 {
     public bool notHidden = true;
-    
     public GameObject waypoint;
-    // Start is called before the first frame update
     
-
     // Update is called once per frame
     void Update()
     {
