@@ -6,7 +6,6 @@ public class Waypoint : MonoBehaviour
 {
     public int health = 100;
     public float alphaLevel = 1f;
-    public bool notHidden = true;
     public static GameObject wayPointA;
 
     // Start is called before the first frame update
@@ -19,15 +18,6 @@ public class Waypoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (Input.GetKeyDown("h")){
-        //    notHidden = !notHidden;
-        // } 
-        // if(notHidden){
-        //    Spawn();
-        // } else {
-          
-        //   Destroy(wayPointA);
-        // }
         if (health == 100){
             alphaLevel = 1f;
             GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,alphaLevel);

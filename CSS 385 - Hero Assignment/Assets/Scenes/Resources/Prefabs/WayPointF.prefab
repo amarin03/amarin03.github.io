@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3381290248167555301}
   - component: {fileID: -6740195687198828504}
   - component: {fileID: -1516103235158871976}
+  - component: {fileID: -8426773104548865458}
   m_Layer: 0
   m_Name: WayPointF
   m_TagString: Untagged
@@ -124,3 +125,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445ed6ad2f77e2d49aa57c04db8d3449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  alphaLevel: 1
+--- !u!114 &-8426773104548865458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381290248167555302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080a5e9a807ac094ebc5fbf83f145dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notHidden: 1
+  waypoint: {fileID: 3381290248167555302}

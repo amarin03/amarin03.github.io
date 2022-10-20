@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7960696233335133716}
   - component: {fileID: -3071152760290957302}
   - component: {fileID: -4780944464831938506}
+  - component: {fileID: 3331458766041305637}
   m_Layer: 0
   m_Name: WayPointA
   m_TagString: Untagged
@@ -127,9 +128,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   alphaLevel: 1
-  notHidden: 1
-  wayPointA1: {fileID: 8499525782577762238}
-  wayPointB1: {fileID: 637196699658606562, guid: cb8228bbd29a1214b98d76103fe3203f, type: 3}
 --- !u!50 &-4780944464831938506
 Rigidbody2D:
   serializedVersion: 4
@@ -151,3 +149,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3331458766041305637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8499525782577762238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080a5e9a807ac094ebc5fbf83f145dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notHidden: 1
+  waypoint: {fileID: 8499525782577762238}

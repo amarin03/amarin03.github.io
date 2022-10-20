@@ -37,8 +37,6 @@ public class Enemy : MonoBehaviour
             Respawn();
             
         }
-       
-       
     }
     public void Respawn(){
         

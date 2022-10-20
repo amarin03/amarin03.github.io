@@ -1311,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3331458766041305637, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
+      propertyPath: hide
+      value: 
+      objectReference: {fileID: 1111240129732930286, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
     - target: {fileID: 8499525782577762238, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
       propertyPath: m_Name
       value: WayPointA
