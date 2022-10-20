@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyWP : MonoBehaviour
+public class DestroyWPB : MonoBehaviour
 {
     
 
@@ -13,10 +13,14 @@ public class DestroyWP : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision){
         
-        Waypoint wayPoint = collision.GetComponent<Waypoint>();
-
+        
+        WayPointB wayPointB = collision.GetComponent<WayPointB>();
+       
+        
         if (collision.gameObject.name != "Hero"){
-            wayPoint.wayPointDamage(25);
+            
+           wayPointB.wayPointDamageB(25);
+           
         } 
          Destroy(gameObject);  
     }

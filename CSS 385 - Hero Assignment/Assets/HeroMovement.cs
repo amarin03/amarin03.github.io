@@ -72,8 +72,7 @@ public class HeroMovement : MonoBehaviour
 
             collisionCount++;
             enemy.Damage(100);
-           
-           
+        
         }
     }
 }

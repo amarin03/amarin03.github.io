@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8743268527093683606}
   - component: {fileID: 8743268527093683607}
   - component: {fileID: -7418295270592312237}
+  - component: {fileID: 8737942198260443772}
   m_Layer: 0
   m_Name: WayPointE
   m_TagString: Untagged
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.35, y: 3.02}
   m_EdgeRadius: 0
+--- !u!114 &8737942198260443772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743268527093683600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae2aa945b80ba94e803ffa398f3d649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

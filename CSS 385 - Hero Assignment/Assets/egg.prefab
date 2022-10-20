@@ -13,6 +13,12 @@ GameObject:
   - component: {fileID: 3330497600399632146}
   - component: {fileID: 1185326783326588407}
   - component: {fileID: 3870889630344035837}
+  - component: {fileID: -7582424683805816247}
+  - component: {fileID: 223727874297850242}
+  - component: {fileID: 2585725902688387613}
+  - component: {fileID: 2172721780771786232}
+  - component: {fileID: 5505262105228561020}
+  - component: {fileID: -7737708713204860062}
   m_Layer: 0
   m_Name: egg
   m_TagString: Egg
@@ -121,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  wayPointA: {fileID: 8499525782577762238, guid: 8d6ff4b5294c81a4aa484bc99fd4d4e3, type: 3}
 --- !u!58 &3870889630344035837
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -138,3 +143,75 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.72
+--- !u!114 &-7582424683805816247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887137077531075643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4640515c63407764fa3b3bd6ec33999c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &223727874297850242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887137077531075643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a9538b3cd9b5d40b4adfe37eae7b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2585725902688387613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887137077531075643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215b761ca9bc2c14196c07b1b1177f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2172721780771786232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887137077531075643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6918aeff99be90d4584bd31c825e4aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5505262105228561020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887137077531075643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbeeadf3553edc4380ebc983ddde950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7737708713204860062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887137077531075643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926199148e415de49b46cba587613a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

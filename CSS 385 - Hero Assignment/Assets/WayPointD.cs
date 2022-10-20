@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Waypoint : MonoBehaviour
+public class WayPointD : MonoBehaviour
 {
     public int health = 100;
     public float alphaLevel = 1f;
-    public bool notHidden = true;
-    public static GameObject wayPointA;
+    public static GameObject wayPointD;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +18,6 @@ public class Waypoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (Input.GetKeyDown("h")){
-        //    notHidden = !notHidden;
-        // } 
-        // if(notHidden){
-        //    Spawn();
-        // } else {
-          
-        //   Destroy(wayPointA);
-        // }
         if (health == 100){
             alphaLevel = 1f;
             GetComponent<SpriteRenderer>().color = new Color (1f,1f,1f,alphaLevel);
@@ -43,7 +33,7 @@ public class Waypoint : MonoBehaviour
         }
        
     }
-    public void wayPointDamage(int damage){
+    public void wayPointDamageD(int damage){
         health -= damage;
 
         if ( health <= 0){
@@ -55,10 +45,10 @@ public class Waypoint : MonoBehaviour
     public void Respawn(){
         
         Vector3 position;
-        wayPointA = Resources.Load<GameObject>("Prefabs/WayPointA");
+        wayPointD = Resources.Load<GameObject>("Prefabs/WayPointD");
         float x = Random.Range(-115, -85);
-        float y = Random.Range(55, 85);
+        float y = Random.Range(-85, -55);
         position = new Vector3(x, y, 0);
-        GameObject prefab = Instantiate(wayPointA, position, wayPointA.transform.rotation) as GameObject;
+        GameObject prefab = Instantiate(wayPointD, position, wayPointD.transform.rotation) as GameObject;
     }
 }
