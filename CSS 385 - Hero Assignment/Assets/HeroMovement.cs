@@ -54,12 +54,12 @@ public class HeroMovement : MonoBehaviour
         }
             
         if (Input.GetKey("a")){
-            transform.Rotate(Vector3.forward, -30f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
+            transform.Rotate(Vector3.forward, -50f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
 
         }
             
         if (Input.GetKey("d")){
-            transform.Rotate(Vector3.forward, -30f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
+            transform.Rotate(Vector3.forward, -50f * Input.GetAxis("Horizontal") * (rotateSpeed * Time.smoothDeltaTime)); 
 
         }
     }
