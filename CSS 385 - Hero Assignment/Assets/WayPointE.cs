@@ -32,7 +32,7 @@ public class WayPointE : MonoBehaviour
         }
        
     }
-    public void wayPointDamageB(int damage){
+    public void wayPointDamageE(int damage){
         health -= damage;
 
         if ( health <= 0){
@@ -48,6 +48,6 @@ public class WayPointE : MonoBehaviour
         float x = Random.Range(85, 115);
         float y = Random.Range(55, 85);
         position = new Vector3(x, y, 0);
-        GameObject prefab = Instantiate(wayPointB, position, wayPointB.transform.rotation) as GameObject;
+        GameObject prefab = Instantiate(wayPointE, position, wayPointE.transform.rotation) as GameObject;
     }
 }

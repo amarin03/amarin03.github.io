@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class DestroyWPC : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    private void OnTriggerEnter2D(Collider2D collision){
         
-    }
+        WayPointC wayPointC = collision.GetComponent<WayPointC>();
+       
+        
+        if (collision.gameObject.name != "Hero"){
+            
+           wayPointC.wayPointDamageC(25);
+           
+        } 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(gameObject);  
     }
 }

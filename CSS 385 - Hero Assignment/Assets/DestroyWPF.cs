@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class DestroyWPF : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private void OnTriggerEnter2D(Collider2D collision){
+        WayPointF wayPointF = collision.GetComponent<WayPointF>();
 
-    // Update is called once per frame
-    void Update()
-    {
+        if (collision.gameObject.name != "Hero"){
+
+            wayPointF.wayPointDamageF(25);
+        } 
         
+        Destroy(gameObject);
+
     }
 }
