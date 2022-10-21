@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public int healthBar = 100;
     public static GameObject enemyPrefab;
     
+    
     void Update(){
 
         if (healthBar == 100){
@@ -30,12 +31,9 @@ public class Enemy : MonoBehaviour
         healthBar -= damage;
 
         if (healthBar <= 0){
-            
             Destroy(gameObject); 
             Respawn();
-            
         }
-        
     }
     public void Respawn(){
         
@@ -46,6 +44,4 @@ public class Enemy : MonoBehaviour
         position = new Vector3(x, y, 0);
         GameObject prefab = Instantiate(enemyPrefab, position, enemyPrefab.transform.rotation) as GameObject;
     }
-    
-   
 }
