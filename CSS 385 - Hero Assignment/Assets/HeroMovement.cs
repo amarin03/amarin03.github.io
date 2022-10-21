@@ -39,7 +39,7 @@ public class HeroMovement : MonoBehaviour
 
     private void KeyboardMovement(){
 
-        transform.Translate(0f, .25f, 0f);
+        transform.Translate(0f, .20f, 0f);
         
         if (Input.GetKey("w")){
             speed += Input.GetAxis("Vertical");
